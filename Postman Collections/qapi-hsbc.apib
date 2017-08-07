@@ -1,0 +1,599 @@
+FORMAT: 1A
+HOST: https://qpi.quintessentially.com/qhsbc/v1
+
+# qapi-hsbc
+TODO: Add Description
+
+# Group Misc
+
+## Article [/article{?type,category,count}]
+
+### article [GET]
+TODO: Add Description
++ Parameters
+    + type (string, optional) -
+
+        + Default: benefit
+        + Sample: benefit
+    + category (string, optional) -
+
+        + Default: 53b298604cc57b3d4a8b486c
+        + Sample: 53b298604cc57b3d4a8b486c
+    + count (number, optional) -
+
+        + Default: 1
+        + Sample: 1
+
++ Request 
+    + Headers
+
+            WWW-Authenticate:NEhzQmMhc0F1dGhXV1c=
+            authorization:SFNCQzpoc2JjY29uY2llcmdlMjAxNg==
+
+
+
+
++ Response 200 
+
+
+
+
+## Region WithArticles [/region/withArticles]
+
+### region [GET]
+TODO: Add Description
+
++ Request 
+    + Headers
+
+            WWW-Authenticate:NEhzQmMhc0F1dGhXV1c=
+            authorization:SFNCQzpoc2JjY29uY2llcmdlMjAxNg==
+
+
+
+
++ Response 200 
+
+
+
+
+## Country [/country/]
+
+### country [GET]
+TODO: Add Description
+
++ Request 
+    + Headers
+
+            WWW-Authenticate:NEhzQmMhc0F1dGhXV1c=
+            authorization:SFNCQzpoc2JjY29uY2llcmdlMjAxNg==
+
+
+
+
++ Response 200 
+
+
+
+
+## Category Benefit GB WithArticles [/category/benefit/GB/withArticles]
+
+### category [GET]
+TODO: Add Description
+
++ Request 
+    + Headers
+
+            WWW-Authenticate:NEhzQmMhc0F1dGhXV1c=
+            authorization:SFNCQzpoc2JjY29uY2llcmdlMjAxNg==
+
+
+
+
++ Response 200 
+
+
+
+
+## User [/user]
+
+### get user [POST]
+TODO: Add Description
++ Attributes
+    + _method (string, optional) -
+
+        + Default: GET
+        + Sample: GET
+
++ Request (application/x-www-form-urlencoded)
+    + Headers
+
+            WWW-Authenticate:NEhzQmMhc0F1dGhXV1c=
+            authorization:SFNCQzpoc2JjY29uY2llcmdlMjAxNg==
+            token:bearer 543e66152221d57d0290aee38317f0ee9ccd655e
+
+
+
+
++ Response 200 
+
+
+
+### edit user [POST]
+TODO: Add Description
++ Attributes
+    + _method (string, optional) -
+
+        + Default: PATCH
+        + Sample: PATCH
+    + last_name (string, optional) -
+
+        + Default: TESTING
+        + Sample: TESTING
+    + mobile_number (string, optional) -
+
+        + Default: +44 222 22321321
+        + Sample: +44 222 22321321
+    + email (string, optional) -
+
+        + Default: cppetrecca+123@gmail.com
+        + Sample: cppetrecca+123@gmail.com
+    + service_language (string, optional) -
+
+        + Default: English
+        + Sample: English
+    + first_name (string, optional) -
+
+        + Default: Cristian 
+        + Sample: Cristian 
+    + salutation (string, optional) -
+
+        + Default: MR
+        + Sample: MR
+
++ Request (application/x-www-form-urlencoded)
+    + Headers
+
+            WWW-Authenticate:NEhzQmMhc0F1dGhXV1c=
+            authorization:SFNCQzpoc2JjY29uY2llcmdlMjAxNg==
+            token:bearer ac003a1027985cdd9b008f9a1984cfe1ccdef138
+
+
+
+
++ Response 200 
+
+
+
+### reset password [POST]
+TODO: Add Description
++ Attributes
+    + jade_id (string, optional) -
+
+        + Default: Jade_12345
+        + Sample: Jade_12345
+    + _method (string, optional) -
+
+        + Default: PATCH
+        + Sample: PATCH
+    + password (string, optional) -
+
+        + Default: asd123
+        + Sample: asd123
+    + token (string, optional) -
+
+        + Default: 65887e6313801e516a89200c2b7977b6821e180460f143dd2463941edca67ae2
+        + Sample: 65887e6313801e516a89200c2b7977b6821e180460f143dd2463941edca67ae2
+
++ Request (application/x-www-form-urlencoded)
+    + Headers
+
+            WWW-Authenticate:NEhzQmMhc0F1dGhXV1c=
+            authorization:SFNCQzpoc2JjY29uY2llcmdlMjAxNg==
+
+
+
+
++ Response 200 
+
+
+
+
+## User Jade 12345 Forgot [/user/Jade_12345/forgot]
+
+### forgot password [GET]
+TODO: Add Description
+
++ Request 
+    + Headers
+
+            WWW-Authenticate:NEhzQmMhc0F1dGhXV1c=
+            authorization:SFNCQzpoc2JjY29uY2llcmdlMjAxNg==
+
+
+
+
++ Response 200 
+
+
+
+
+## Device [/device]
+
+### device [POST]
+TODO: Add Description
++ Attributes
+    + device_id (string, optional) -
+
+        + Default: 01
+        + Sample: 01
+    + device_name (string, optional) -
+
+        + Default: samsoniano-2123121
+        + Sample: samsoniano-2123121
+    + os (string, optional) -
+
+        + Default: androino 32498239 v.32
+        + Sample: androino 32498239 v.32
+
++ Request (application/x-www-form-urlencoded)
+    + Headers
+
+            WWW-Authenticate:NEhzQmMhc0F1dGhXV1c=
+            authorization:SFNCQzpoc2JjY29uY2llcmdlMjAxNg==
+            token:bearer 9d71071f2f6730eeaa5af699fb2e5b7a3cc98f7c
+
+
+
+
++ Response 200 
+
+
+
+
+## Partner [/partner]
+
+### partner [POST]
+TODO: Add Description
++ Attributes
+    + jade_id (string, optional) -
+
+        + Default: A0000008
+        + Sample: A0000008
+    + partner_id (string, optional) -
+
+        + Default: fdajksfhsalkfjsdaklfj38472985y2iufjsdhgoiwhs
+        + Sample: fdajksfhsalkfjsdaklfj38472985y2iufjsdhgoiwhs
+    + partner_name (string, optional) -
+
+        + Default: melmac-2123121
+        + Sample: melmac-2123121
+
++ Request (application/x-www-form-urlencoded)
+    + Headers
+
+            WWW-Authenticate:NEhzQmMhc0F1dGhXV1c=
+            authorization:SFNCQzpoc2JjY29uY2llcmdlMjAxNg==
+
+
+
+
++ Response 200 
+
+
+
+
+## Getpartner [/getpartner]
+
+### get partner [POST]
+TODO: Add Description
++ Attributes
+    + jade_id (string, optional) -
+
+        + Default: Jade_12345
+        + Sample: Jade_12345
+    + device_id (string, optional) -
+
+        + Default: 01
+        + Sample: 01
+
++ Request (application/x-www-form-urlencoded)
+    + Headers
+
+            WWW-Authenticate:NEhzQmMhc0F1dGhXV1c=
+            authorization:SFNCQzpoc2JjY29uY2llcmdlMjAxNg==
+
+
+
+
++ Response 200 
+
+
+
+
+## Request [/request]
+
+### request [POST]
+TODO: Add Description
++ Attributes
+    + jade_id (string, optional) -
+
+        + Default: S00000238
+        + Sample: S00000238
+    + title (string, optional) -
+
+        + Default: test 1
+        + Sample: test 1
+    + message (string, optional) -
+
+        + Default: I would like to test this test
+        + Sample: I would like to test this test
+    + article_id (string, optional) -
+
+        + Default: 1231231
+        + Sample: 1231231
+    + device_id (string, optional) -
+
+        + Default: 22e9b414
+        + Sample: 22e9b414
+
++ Request (application/x-www-form-urlencoded)
+    + Headers
+
+            WWW-Authenticate:NEhzQmMhc0F1dGhXV1c=
+            authorization:SFNCQzpoc2JjY29uY2llcmdlMjAxNg==
+
+
+
+
++ Response 200 
+
+
+
+
+## Getrequest [/getrequest]
+
+### request get [POST]
+TODO: Add Description
++ Attributes
+    + device_id (string, optional) -
+
+        + Default: 01
+        + Sample: 01
+    + jade_id (string, optional) -
+
+        + Default: sssss
+        + Sample: sssss
+
++ Request (application/x-www-form-urlencoded)
+    + Headers
+
+            WWW-Authenticate:NEhzQmMhc0F1dGhXV1c=
+            authorization:SFNCQzpoc2JjY29uY2llcmdlMjAxNg==
+
+
+
+
++ Response 200 
+
+
+
+
+## Preuser [/preuser]
+
+### hook  prehook [POST]
+TODO: Add Description
++ Attributes
+    + id (string, optional) -
+
+        + Default: a0nw000000AhCGiAAN
+        + Sample: a0nw000000AhCGiAAN
+
++ Request (application/x-www-form-urlencoded)
+    + Headers
+
+            WWW-Authenticate:NEhzQmMhc0F1dGhXV1c=
+            authorization:SFNCQzpoc2JjY29uY2llcmdlMjAxNg==
+
+
+
+
++ Response 200 
+
+
+
+
+## Token [/token]
+
+### oauth token [POST]
+TODO: Add Description
++ Attributes
+    + jade_id (string, optional) -
+
+        + Default: Q0000103
+        + Sample: Q0000103
+    + grant_type (string, optional) -
+
+        + Default: password
+        + Sample: password
+    + password (string, optional) -
+
+        + Default: Test12345
+        + Sample: Test12345
+    + client_id (string, optional) -
+
+        + Default: HsBCb788c900A99app
+        + Sample: HsBCb788c900A99app
+    + client_secret (string, optional) -
+
+        + Default: Ab0909084joJPeesPASS
+        + Sample: Ab0909084joJPeesPASS
+
++ Request (application/x-www-form-urlencoded)
+    + Headers
+
+            WWW-Authenticate:NEhzQmMhc0F1dGhXV1c=
+            authorization:SFNCQzpoc2JjY29uY2llcmdlMjAxNg==
+
+
+
+
++ Response 200 
+
+
+
+### oauth refresh token [POST]
+TODO: Add Description
++ Attributes
+    + grant_type (string, required)
+
+        + Sample: refresh_token
+    + refresh_token (string, required)
+
+    + client_id (string, required)
+
+        + Sample: HsBCb788c900A99app
+    + client_secret (string, required)
+
+        + Sample: Ab0909084joJPeesPASS
+
++ Request (application/x-www-form-urlencoded)
+    + Headers
+
+            WWW-Authenticate:NEhzQmMhc0F1dGhXV1c=
+            authorization:SFNCQzpoc2JjY29uY2llcmdlMjAxNg==
+
+
+
+
++ Response 200 
+
+
+
+
+## Qhsbc V1 Verifyuser [/qhsbc/v1/verifyuser]
+
+### verify production [POST]
+TODO: Add Description
++ Attributes
+    + jade_id (string, optional) -
+
+        + Default: R00000100
+        + Sample: R00000100
+    + _method (string, optional) -
+
+        + Default: GET
+        + Sample: GET
+
++ Request (application/x-www-form-urlencoded)
+    + Headers
+
+            WWW-Authenticate:NEhzQmMhc0F1dGhXV1dBdXRoM250aWM0NzMyMDE2YWFhQ0Nlc1M=
+            authorization:SHNCYzRjY2VzczIwMTYwMDk4VTUzcjpIc2JjQ29uY2llckczMzMzM2FhMTIzNA==
+
+
+
+
++ Response 200 
+
+
+
+
+## Verifyuser [/verifyuser]
+
+### verify preproduction [POST]
+TODO: Add Description
++ Attributes
+    + jade_id (string, optional) -
+
+        + Default: R00000100
+        + Sample: R00000100
+    + _method (string, optional) -
+
+        + Default: GET
+        + Sample: GET
+
++ Request (application/x-www-form-urlencoded)
+    + Headers
+
+            WWW-Authenticate:NEhzQmMhc0F1dGhXV1c=
+            authorization:SFNCQzpoc2JjY29uY2llcmdlMjAxNg==
+
+
+
+
++ Response 200 
+
+
+
+
+## Password [/password]
+
+### set password [POST]
+TODO: Add Description
++ Attributes
+    + token (string, optional) -
+
+        + Default: vMSHF6yFoYPqPnIB1l2/v1OIUWCUCNgsPLTHoHg77Oo
+        + Sample: vMSHF6yFoYPqPnIB1l2/v1OIUWCUCNgsPLTHoHg77Oo
+    + password (string, optional) -
+
+        + Default: Test1234
+        + Sample: Test1234
+
++ Request (application/x-www-form-urlencoded)
+    + Headers
+
+            WWW-Authenticate:NEhzQmMhc0F1dGhXV1c=
+            authorization:SFNCQzpoc2JjY29uY2llcmdlMjAxNg==
+
+
+
+
++ Response 200 
+
+
+
+
+## Partner A0000008 [/partner/A0000008{?device_id}]
+
+### partner copy [GET]
+TODO: Add Description
++ Parameters
+    + device_id (number, optional) -
+
+        + Default: 000000003
+        + Sample: 000000003
+
++ Request 
+    + Headers
+
+            WWW-Authenticate:NEhzQmMhc0F1dGhXV1c=
+            authorization:SFNCQzpoc2JjY29uY2llcmdlMjAxNg==
+
+
+
+
++ Response 200 
+
+
+
+
+## Qhsbv V1 User Delete [/qhsbv/v1/user/delete]
+
+### delete users [POST]
+TODO: Add Description
+
++ Request 
+    + Headers
+
+            WWW-Authenticate:NEhzQmMhc0F1dGhXV1dBdXRoM250aWM0NzMyMDE2YWFhQ0Nlc1M=
+            authorization:SHNCYzRjY2VzczIwMTYwMDk4VTUzcjpIc2JjQ29uY2llckczMzMzM2FhMTIzNA==
+
+
+
+
++ Response 200 
+
+
+
